@@ -38,9 +38,9 @@ works:
     style: wide
   - path: _works/flowers.md
 members:
-  - avatar: /assets/images/@stock/member-7.png
+  - avatar: /assets/images/@stock/member-9.png
     name: Brandon Bailey
-    position: Founder
+    position: CEO
     socials:
       - link: https://www.linkedin.com/in/brandon-bailey-3732885b/
         icon: linkedin
@@ -67,8 +67,8 @@ members:
     desc:
       "Clare is a senior front-end developer here at Wrap, specialises in building blocks of the web: HTML, CSS, and JavaScript. She has almost ten years experiencs in the front-end development."
   - avatar: /assets/images/@stock/member-4-4.png
-    name: Christina Day
-    position: UX/UI Designer
+    name: Vassilli Skarine
+    position: Software Engineer
     socials:
       - link: http://twitter.com
         icon: twitter
@@ -279,9 +279,9 @@ courses:
   </div>
 </div>
 <div class="full no-padding team-bg">
-  <div class="div member-decs">
+  <div class="div member-decs grid-x grid-padding-x align-stretch">
     {% for member in page.members %}
-      <div class="large-3 columns">
+      <div class="small-3 large-3 columns cell">
         <div class='member-dec'>
           <div class='intro'>
             <h3>{{ member.name | escape }}</h3>
