@@ -7,17 +7,20 @@
     <div class='large-8 medium-8 columns'>
       <div class='form'>
         <div class='row'>
-          <form id='contact_form' class='dark' method='POST'>
+        <form action="https://tutord.us20.list-manage.com/subscribe/post" method="POST">
+    <input type="hidden" name="u" value="c55ab6c6180ed851656f298c6">
+    <input type="hidden" name="id" value="5a99e88619">
+
             <div class='large-12 columns'>
               <p id='thanks'>
                 Thanks for contacting us, we'll be in touch soon!
               </p>
             </div>
             <div class='medium-12 columns'>
-              <input class='required' name='name' placeholder='NAME' type='text'>
-              <input class='required email' name='email' placeholder='EMAIL' type='text'>
-              <input class='required' name='subject' placeholder='SUBJECT' type='text'>
-              <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
+              <input class='required' name='MERGE1' id='MERGE1' placeholder='FIRST NAME' type='text'>
+              <input class='required' name='MERGE2' id='MERGE2' placeholder='LAST NAME' type='text'>
+              <input class='required email' name='MERGE0' id='MERGE0' placeholder='EMAIL' type='text'>
+              <textarea class='required' name='comment' placeholder='COMMENT'></textarea>
               <input name="recipient" type="hidden" value="{{ site.email }}" />
               <div class='spacing'></div>
               <input class='button white' type='submit'>
