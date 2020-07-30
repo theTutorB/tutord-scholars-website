@@ -3,11 +3,11 @@ layout: default
 onepage: true
 services:
   - title: Web Development 101
-    icon: fa fa-bell-o
+    icon: fa fa-laptop
     desc: Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus.
     bg: /assets/images/@stock/service-item-1-bg.jpg
   - title: Intro to music production
-    icon: fa fa-lightbulb-o
+    icon: fa fa-music
     desc: Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus.
     bg: /assets/images/@stock/service-item-2-bg.jpg
   - title: Social Media Fundimentals
@@ -26,7 +26,7 @@ works:
     style: wide
   - path: _works/flowers.md
 members:
-  - avatar: /assets/images/members/brandon-bailey.jpg
+  - avatar: assets/images/members/brandon-bailey-resize.jpg
     name: Brandon Bailey
     position: CEO and Founder
     socials:
@@ -129,9 +129,10 @@ courses:
 
       </h1>
       <h2 class='thin'>
-       Teaching urban youth in-demand 21st century skills in 1 day workshops and courses
+        TutorD Scholars is a hands-on educational platform, teaching urban youth in-
+        demand 21st-century skills via online and in-person workshops.
        {% assign nav_obj = site.data.nav | where:'section_id','works' | first %}
-       <a href='{{ "index.html" | append:nav_obj.path | relative_url }}'>View our courses</a>
+       <a href='{{ "index.html" | append:nav_obj.path | relative_url }}'>View our courses.</a>
       </h2>
     </div>
   </div>
@@ -145,11 +146,15 @@ courses:
       <div class="section-title">
         <p class="small-title">Learning Experiences</p>
         <h2>
-          Immersive experiences,  with the
+          We create an engaging and thoughtful space
             <br/>
-          the scholar first.
+          where the scholar comes first.
         </h2>
-        <p class="big-size">We create an engaging and thoughtful space to allow our scholars and volunteers to identify with one another and connect on a human level.</p>
+        <p class="big-size">
+          Either online or in-person, scholars receive hands-on experience working with
+          leading experts from top companies and booming startups in the technology, marketing and
+          communication industries.
+        </p>
         <div class="four spacing"></div>
       </div>
     </div>
@@ -162,10 +167,12 @@ courses:
     <div class="section-header alt white">
       <h2>scholar focused</h2>
     </div>
-    <p class="light">With the whole student in mind, we at TutorD Scholars provide an inclusive atmosphere. We provide the laptops and also food the students making sun that we can meet as many needs as possible, so that they can focus on learning.</p>
+    <p class="light">With the whole student in mind, we at TutorD Scholars provide an inclusive atmosphere.
+      We provide the laptops and also food the students making sun that we can meet as many needs
+      as possible so that they can focus on learning.</p>
     <p class="light"></p>
     <div class="two spacing"></div>
-    <a href="#team" class="button small">Meet the team</a>
+    <a href="#team" class="button small">Click here to become a Scholar</a>
     <div class="three spacing"></div>
   </div>
 </div>
@@ -176,8 +183,8 @@ courses:
   <div class='row'>
     <div class='large-8 columns large-centered'>
       <div class="section-title">
-        <p class="small-title">main courses</p>
-        <h2>Transforming the workforce</h2>
+        <p class="small-title">Transforming the workforce</p>
+        <h2>Course Offerings</h2>
       </div>
     </div>
   </div>
@@ -197,7 +204,7 @@ courses:
 <div class='full'>
   <div class='row'>
     <div class='large-8 columns large-centered'>
-      {% include section-title.html small_title="take a look" title="What we recently do." %}
+      {% include section-title.html small_title="take a look" title="What we've recently done." %}
     </div>
   </div>
 </div>
@@ -272,6 +279,13 @@ courses:
         <img class="avatar" alt="" src="{{ member.avatar | relative_url }}" />
       </div>
     </div>
+<!--
+      <ul class="small-block-grid-3">
+  <li></li>
+  <li></li>
+  <li><img class="avatar" alt="" src="{{ member.avatar | relative_url }}" /></li>
+</ul>
+-->
     {% endfor %}
   </div>
 </div>

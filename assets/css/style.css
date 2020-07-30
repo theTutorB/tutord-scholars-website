@@ -1,3 +1,7 @@
+.member-avatar {
+    display: inline-flex;
+}
+
 ---
 ---
 @charset "UTF-8";
