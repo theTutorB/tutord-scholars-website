@@ -1,5 +1,13 @@
-.member-avatar {
-    display: inline-flex;
+/* Course Offerings */
+.icon-text-advanced {
+  height: 55vh;
+}
+.icon-text-advanced a {
+  color: #999;
+}
+
+.icon-text-advanced a:hover {
+  color: #ffffff;
 }
 
 ---

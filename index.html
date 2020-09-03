@@ -6,14 +6,17 @@ services:
     icon: fa fa-laptop
     desc: Two hour introductionary workshop foucusing on a positive experience with web development technologies.
     bg: /assets/images/@stock/service-item-1-bg.jpg
+    link: https://www.movement.fm/event/Web%20Development%20101-2693
   - title: Intro to Web Development
     icon: fa fa-laptop
     desc: Free six week apprenticeship teaching dedicated scholars the fundamentals of web development with the goal of helping them acheive their assperations in the tech industry.
     bg: /assets/images/@stock/service-item-2-bg.jpg
+    link: https://www.movement.fm/event/Intro%20to%20Web%20Dev%20Apprenticeship-2694
   - title: Eight week Profesional Training
     icon: fa fa-bookmark-o
     desc: TBD
     bg: /assets/images/@stock/service-item-3-bg.jpg
+    link: #
 works:
   - path: _works/diff-foods.md
   - path: _works/sketch-book.md
@@ -21,12 +24,9 @@ works:
     style: wide
   - path: _works/umbrella-beauty.md
   - path: _works/amber.md
-  - path: _works/explore.md
-  - path: _works/uro-mag.md
-    style: wide
-  - path: _works/flowers.md
+
 members:
-  - avatar: assets/images/members/brandon-bailey-resize.jpg
+  - avatar: assets/images/members/brandon.jpg
     name: Brandon Bailey
     position: CEO and Founder
     socials:
@@ -278,18 +278,11 @@ courses:
 <div class="full dark-grey no-padding">
   <div class="members">
     {% for member in page.members %}
-    <div class="small-3 columns">
-      <div class='member-avatar'>
-        <img class="avatar" alt="" src="{{ member.avatar | relative_url }}" />
+      <div class="small-3 columns">
+        <div class='member-avatar'>
+          <img class="avatar" alt="" src="{{ member.avatar | relative_url }}" />
+        </div>
       </div>
-    </div>
-<!--
-      <ul class="small-block-grid-3">
-  <li></li>
-  <li></li>
-  <li><img class="avatar" alt="" src="{{ member.avatar | relative_url }}" /></li>
-</ul>
--->
     {% endfor %}
   </div>
 </div>
