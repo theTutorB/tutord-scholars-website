@@ -4,17 +4,17 @@ onepage: true
 services:
   - title: Web Development 101
     icon: fa fa-laptop
-    desc: Two hour introductionary workshop foucusing on a positive experience with web development technologies.
+    desc: Two hour workshop focused on a positive experience in web development.
     bg: /assets/images/@stock/service-item-1-bg.jpg
     link: https://www.movement.fm/event/Web%20Development%20101-2693
   - title: Intro to Web Development
     icon: fa fa-laptop
-    desc: Free six week apprenticeship teaching dedicated scholars the fundamentals of web development with the goal of helping them acheive their assperations in the tech industry.
+    desc: Free six week apprenticeship teaching the fundamentals of web development.
     bg: /assets/images/@stock/service-item-2-bg.jpg
     link: https://www.movement.fm/event/Intro%20to%20Web%20Dev%20Apprenticeship-2694
   - title: Eight week Profesional Training
     icon: fa fa-bookmark-o
-    desc: TBD
+    desc: Coming Soon.
     bg: /assets/images/@stock/service-item-3-bg.jpg
     link: #
 works:
@@ -35,7 +35,7 @@ members:
       - link: https://www.instagram.com/dammitBrandon/
         icon: instagram
     desc:
-      "As the founder and CEO of TutorD Scholars, as a software engineer with over 10 years of experience, he knows that user-centred and easy-to-grasp educational approach is an essential way to distinguish a good educational product and an life changing product."
+      "As the founder and CEO of TutorD Scholars, as a software engineer with over ten years of experience, he knows that user-centered and easy-to-grasp educational approaches are essential to distinguish an excellent educational product and a life-changing product."
   - avatar: assets/images/members/kellee.jpg
     name: Kellee Bassaragh
     position: Growth and Marketing
@@ -45,7 +45,7 @@ members:
       - link: https://www.instagram.com/kelleeb/
         icon: instagram
     desc:
-      "Kellee started designing marketing campaigns back in 1992. Since then, she has worked for a wide range of digital agencies in the US and Jamacia. At TutorD Scholars, Kellee’s role means solving all kinds of communication and outreach problems."
+      "Kellee is the Director of Marketing and PR, and volunteers as a Educator as well, Teach how to make a campaign go viral.  She has over 12 years of professional experience in her perspective field and brings a bright touch to TutorD Scholars."
   - avatar: /assets/images/members/michael.jpg
     name: Micheal Evans
     position: Brand and Community Engagement
@@ -55,7 +55,7 @@ members:
       - link: https://www.instagram.com/m_i_c_evans/
         icon: instagram
     desc:
-      "Mike is a Customer Success and Sales professional in technology, specialises in building blocks of the content and connecting with our core audience."
+      "Mike is a Customer Success and Sales professional in IT, specialises in building blocks of the content and connecting with our core audience."
   - avatar: assets/images/members/tyler.jpg
     name: Tyler Grady
     position: Curriculum Development
@@ -65,7 +65,7 @@ members:
       - link: http://facebook.com
         icon: facebook
     desc:
-      "Tyler started teaching back in 2008. Since then, he has worked for a wide range of educational spaces in Cali. At TutorD Scholars, Tyler’s role means solving all kinds of visual design problems and helping build out curriculums that students can easily connect ideas and grasp concepts."
+      "Tyler started teaching back in 2008. Since then, he has worked for a wide range of educational spaces in California. At TutorD Scholars, Tyler’s role means solving various visual design problems and building out curriculums so students may easily connect ideas and grasp concepts."
 
 team_slides:
   - /assets/images/stills/MVI_5606.00_00_08_00.Still008.jpg
@@ -204,49 +204,49 @@ courses:
 </div>
 
 
-<a id='works'></a>
-<div class='full'>
-  <div class='row'>
-    <div class='large-8 columns large-centered'>
-      {% include section-title.html small_title="take a look" title="What we've recently done." %}
-    </div>
-  </div>
-</div>
-<div class='full no-padding' id="demo-1-works">
-  <div class='mod modMasonryGallery'>
-    <ul class='gallery'>
+<!--<a id='works'></a>-->
+<!--<div class='full'>-->
+<!--  <div class='row'>-->
+<!--    <div class='large-8 columns large-centered'>-->
+<!--      {% include section-title.html small_title="take a look" title="What we've recently done." %}-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class='full no-padding' id="demo-1-works">-->
+<!--  <div class='mod modMasonryGallery'>-->
+<!--    <ul class='gallery'>-->
 
-      {% for item in page.works %}
+<!--      {% for item in page.works %}-->
 
-        {% assign work = site.works | where:"path",item.path | first %}
+<!--        {% assign work = site.works | where:"path",item.path | first %}-->
 
-        {% if item.style == 'wide' %}
-          {% assign class = 'wide' %}
-          {% assign width = 1000 %}
-          {% assign height = 350 %}
-        {% else %}
-          {% assign class = '' %}
-          {% assign width = 500 %}
-          {% assign height = 350 %}
-        {% endif %}
+<!--        {% if item.style == 'wide' %}-->
+<!--          {% assign class = 'wide' %}-->
+<!--          {% assign width = 1000 %}-->
+<!--          {% assign height = 350 %}-->
+<!--        {% else %}-->
+<!--          {% assign class = '' %}-->
+<!--          {% assign width = 500 %}-->
+<!--          {% assign height = 350 %}-->
+<!--        {% endif %}-->
 
-        <li class="{{class}}">
-          <a href='{{ work.url | relative_url }}'>
-            <img width="{{width}}" height="{{height}}" alt="" src="{{ work.thumbnail | relative_url }}" />
-            <div class='overlay'>
-              <div class='thumb-info'>
-                <h3>{{ work.title | downcase | capitalize }}</h3>
-                <p>{{ work.categories | join:" & " | escape }}</p>
-              </div>
-            </div>
-          </a>
-        </li>
+<!--        <li class="{{class}}">-->
+<!--          <a href='{{ work.url | relative_url }}'>-->
+<!--            <img width="{{width}}" height="{{height}}" alt="" src="{{ work.thumbnail | relative_url }}" />-->
+<!--            <div class='overlay'>-->
+<!--              <div class='thumb-info'>-->
+<!--                <h3>{{ work.title | downcase | capitalize }}</h3>-->
+<!--                <p>{{ work.categories | join:" & " | escape }}</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </li>-->
 
-      {% endfor %}
+<!--      {% endfor %}-->
 
-    </ul>
-  </div>
-</div>
+<!--    </ul>-->
+<!--  </div>-->
+<!--</div>-->
 <div class='full dark no-padding '>
   <div class="four spacing"></div>
   <div class='row'>
