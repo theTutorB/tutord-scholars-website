@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   through focused apprenticeship and mentorship programs.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dev.scholars.tutord.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://scholars.tutord.io" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: tutordscholars
 github_username: theTutorB
 
