@@ -188,49 +188,49 @@ courses:
   </div>
 </div>
 
-<a id='works'></a>
-<div class='full'>
-  <div class='row'>
-    <div class='large-8 columns large-centered'>
-      {% include section-title.html small_title="take a look" title="What we've recently done." %}
-    </div>
-  </div>
-</div>
-<div class='full no-padding' id="demo-1-works">
-  <div class='mod modMasonryGallery'>
-    <ul class='gallery'>
+<!--<a id='works'></a>-->
+<!--<div class='full'>-->
+<!--  <div class='row'>-->
+<!--    <div class='large-8 columns large-centered'>-->
+<!--      {% include section-title.html small_title="take a look" title="What we've recently done." %}-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class='full no-padding' id="demo-1-works">-->
+<!--  <div class='mod modMasonryGallery'>-->
+<!--    <ul class='gallery'>-->
 
-      {% for item in page.works %}
+<!--      {% for item in page.works %}-->
 
-      {% assign work = site.works | where:"path",item.path | first %}
+<!--      {% assign work = site.works | where:"path",item.path | first %}-->
 
-      {% if item.style == 'wide' %}
-      {% assign class = 'wide' %}
-      {% assign width = 1000 %}
-      {% assign height = 350 %}
-      {% else %}
-      {% assign class = '' %}
-      {% assign width = 500 %}
-      {% assign height = 350 %}
-      {% endif %}
+<!--      {% if item.style == 'wide' %}-->
+<!--      {% assign class = 'wide' %}-->
+<!--      {% assign width = 1000 %}-->
+<!--      {% assign height = 350 %}-->
+<!--      {% else %}-->
+<!--      {% assign class = '' %}-->
+<!--      {% assign width = 500 %}-->
+<!--      {% assign height = 350 %}-->
+<!--      {% endif %}-->
 
-      <li class="{{class}}">
-        <a href='{{ work.url | relative_url }}'>
-          <img width="{{width}}" height="{{height}}" alt="" src="{{ work.thumbnail | relative_url }}" />
-          <div class='overlay'>
-            <div class='thumb-info'>
-              <h3>{{ work.title | downcase | capitalize }}</h3>
-              <p>{{ work.categories | join:" & " | escape }}</p>
-            </div>
-          </div>
-        </a>
-      </li>
+<!--      <li class="{{class}}">-->
+<!--        <a href='{{ work.url | relative_url }}'>-->
+<!--          <img width="{{width}}" height="{{height}}" alt="" src="{{ work.thumbnail | relative_url }}" />-->
+<!--          <div class='overlay'>-->
+<!--            <div class='thumb-info'>-->
+<!--              <h3>{{ work.title | downcase | capitalize }}</h3>-->
+<!--              <p>{{ work.categories | join:" & " | escape }}</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
 
-      {% endfor %}
+<!--      {% endfor %}-->
 
-    </ul>
-  </div>
-</div>
+<!--    </ul>-->
+<!--  </div>-->
+<!--</div>-->
 
 <div class='full dark no-padding '>
   <div class="four spacing"></div>
